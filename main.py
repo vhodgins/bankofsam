@@ -9,31 +9,31 @@ import streamlit.components.v1 as components
 # full width with Streamlit chrome hidden
 st.set_page_config(page_title="Bank of Sam — SAMBUCKS", layout="wide", initial_sidebar_state="collapsed")
 
-# st.markdown("""
-# <style>
-# /* app + page background forced dark so any gaps aren’t white */
-# :root { --bankofsam-bg: #06140b; }
-# html, body, .stApp { background: var(--bankofsam-bg) !important; }
+st.markdown("""
+<style>
+/* app + page background forced dark so any gaps aren’t white */
+:root { --bankofsam-bg: #06140b; }
+html, body, .stApp { background: var(--bankofsam-bg) !important; }
 
-# /* nuke sidebar entirely */
-# [data-testid="stSidebar"] { display: none !important; }
+/* nuke sidebar entirely */
+[data-testid="stSidebar"] { display: none !important; }
 
-# /* fully remove the top header (visibility:hidden leaves height!) */
-# [data-testid="stHeader"] { display: none !important; }
-# header { display: none !important; }            /* older Streamlit */
-# footer { display: none !important; }            /* optional: hide footer */
+/* fully remove the top header (visibility:hidden leaves height!) */
+[data-testid="stHeader"] { display: none !important; }
+header { display: none !important; }            /* older Streamlit */
+footer { display: none !important; }            /* optional: hide footer */
 
-# /* remove the default top padding/margins */
-# [data-testid="stAppViewContainer"] > .main { padding-top: 0 !important; }
-# .block-container { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
+/* remove the default top padding/margins */
+[data-testid="stAppViewContainer"] > .main { padding-top: 0 !important; }
+.block-container { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
 
-# /* kill any first-child spacing in the main stack */
-# section.main > div:first-child { margin-top: 0 !important; padding-top: 0 !important; }
+/* kill any first-child spacing in the main stack */
+section.main > div:first-child { margin-top: 0 !important; padding-top: 0 !important; }
 
-# /* make the component iframe not add any stray spacing */
-# iframe[title="st.iframe"] { display: block; margin: 0; background: transparent; }
-# </style>
-# """, unsafe_allow_html=True)
+/* make the component iframe not add any stray spacing */
+iframe[title="st.iframe"] { display: block; margin: 0; background: transparent; }
+</style>
+""", unsafe_allow_html=True)
 
 
 # controls bar for file inputs (kept tiny)
