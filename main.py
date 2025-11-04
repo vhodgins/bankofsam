@@ -337,7 +337,6 @@ html, body {{ margin:0; padding:0; background:#06140b; color:var(--text); font-f
       </div>
     </div>
 
-    <div class="footer">This is a prank site No real quotes No real advice</div>
   </div>
 
   <div class="watermark"></div>
